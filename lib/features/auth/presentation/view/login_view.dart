@@ -235,37 +235,37 @@ class _LoginStatefulState extends ConsumerState<LoginStateful> {
                       ),
                     ),
                     child: Text(
-                      'Login',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
-          SizedBox(height: 8.0),
-          TextButton(
-            onPressed: _forgotPassword,
-            child: Text(
-              'Forgot Password?',
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
-          SizedBox(height: 32.0),
-          TextButton(
-            onPressed: _signUp,
-            child: Text(
-              'Don\'t have an account? Sign Up',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+//                       'Login',
+//                       style: TextStyle(
+//                         fontSize: 20,
+//                         fontWeight: FontWeight.bold,
+//                         color: Colors.white,
+//                       ),
+//                     ),
+//                   ),
+//                 ),
+//           SizedBox(height: 8.0),
+//           TextButton(
+//             onPressed: _forgotPassword,
+//             child: Text(
+//               'Forgot Password?',
+//               style: TextStyle(color: Colors.white),
+//             ),
+//           ),
+//           SizedBox(height: 32.0),
+//           TextButton(
+//             onPressed: _signUp,
+//             child: Text(
+//               'Don\'t have an account? Sign Up',
+//               style: TextStyle(
+//                 color: Colors.white,
+//                 fontSize: 18,
+//                 fontWeight: FontWeight.bold,
+//               ),
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
