@@ -15,7 +15,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
     Text('Home Page',
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
     Text('Rooms Page',
-        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+        style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold)),
     Text('Settings Page',
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
   ];
