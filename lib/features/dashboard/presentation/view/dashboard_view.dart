@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hotel_book/features/dashboard/presentation/view/screen/home_screen.dart';
 import 'package:hotel_book/features/dashboard/presentation/view/screen/room_screen.dart';
 
 class DashboardView extends ConsumerStatefulWidget {
@@ -13,9 +14,9 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Home Page',
-        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
-        
+    // Text('Home Page',
+    //     style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+    HomeView(),    
     RoomView(),
     Text('Settings Page',
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
