@@ -5,6 +5,6 @@ class DashboardViewNavigator {}
 
 mixin DashboardViewRoute {
   openDashBoardView() {
-    NavigateRoute.pushRoute(RoomView());
+    NavigateRoute.pushRoute(DashboardView());
   }
 }
