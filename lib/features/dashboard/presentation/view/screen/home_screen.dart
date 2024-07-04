@@ -21,7 +21,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hotel Booking'),
+        title: const Text('Hotel-Book'),
         actions: [
           IconButton(
             icon: const Icon(Icons.account_circle),
@@ -50,7 +50,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
                   bottom: 20,
                   left: 20,
                   child: Text(
-                    'Welcome to Our Hotel',
+                    'Welcome to Hotel-Book',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
@@ -96,7 +96,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
-                                'assets/images/3.jpg', // Example image
+                                'assets/images/chhimei.jpg', // Example image
                                 width: 150,
                                 height: 120,
                                 fit: BoxFit.cover,
@@ -114,7 +114,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                      '\$100 per night', // Example price
+                                      '\$200 per night', // Example price
                                       style: Theme.of(context)
                                           .textTheme
                                           .bodyMedium,
@@ -146,7 +146,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
-                                'assets/images/3.jpg', // Example image
+                                'assets/images/horizon.jpg', // Example image
                                 width: 150,
                                 height: 120,
                                 fit: BoxFit.cover,
