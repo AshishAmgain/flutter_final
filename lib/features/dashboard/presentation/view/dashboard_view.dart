@@ -15,6 +15,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
   static const List<Widget> _widgetOptions = <Widget>[
     Text('Home Page',
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+        
     RoomView(),
     Text('Settings Page',
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
