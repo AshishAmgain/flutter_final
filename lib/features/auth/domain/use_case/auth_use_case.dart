@@ -4,6 +4,10 @@ import 'package:dartz/dartz.dart';
 import 'package:hotel_book/core/failure/failure.dart';
 import 'package:hotel_book/features/auth/domain/repository/auth_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:mockito/annotations.dart';
+
+
+
 
 final authUserCaseProvider = Provider((ref) {
   return AuthUseCase(ref.read(authRepositoryProvider));
