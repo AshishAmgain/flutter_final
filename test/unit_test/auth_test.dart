@@ -8,6 +8,7 @@ class MockAuthUseCase extends Mock implements AuthUseCase {}
 // Mock LoginViewNavigator
 class MockLoginViewNavigator extends Mock implements LoginViewNavigator {}
 
+//testing 
 void main() {
   group('AuthState tests', () {
     test('AuthState initial', () {
