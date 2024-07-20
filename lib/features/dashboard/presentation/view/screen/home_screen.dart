@@ -41,7 +41,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
                   height: 250,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('assets/images/world.jpg'),
+                      image: AssetImage('assets/images/reception.jpg'),
                       fit: BoxFit.cover,
                     ),
                   ),
