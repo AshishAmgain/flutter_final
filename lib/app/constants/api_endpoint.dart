@@ -5,7 +5,7 @@ class ApiEndpoints {
   static const Duration receiveTimeout = Duration(seconds: 1000);
   // static const String baseUrl = "http://10.0.2.2:5000/api/";
   static const int roomlimit = 5;
-  static const String baseUrl = "http://192.168.101.10:5000/api/";
+  static const String baseUrl = "http://192.168.101.12:5000/api/";
 
   // ====================== Auth Routes ======================
   static const String login = "user/login";
