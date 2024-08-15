@@ -5,7 +5,6 @@ import 'package:hotel_book/features/dashboard/presentation/view/screen/contact_s
 import 'package:hotel_book/features/dashboard/presentation/view/screen/home_screen.dart';
 import 'package:hotel_book/features/dashboard/presentation/view/screen/room_screen.dart';
 
-//dfsfsd
 class DashboardView extends ConsumerStatefulWidget {
   const DashboardView({Key? key}) : super(key: key);
 
