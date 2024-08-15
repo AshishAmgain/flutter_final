@@ -5,7 +5,6 @@ import 'package:mockito/mockito.dart';
 // Mock AuthUseCase
 class MockAuthUseCase extends Mock implements AuthUseCase {}
 
-//efew
 // Mock LoginViewNavigator
 class MockLoginViewNavigator extends Mock implements LoginViewNavigator {}
 
