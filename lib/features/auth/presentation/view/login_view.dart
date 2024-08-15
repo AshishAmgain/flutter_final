@@ -4,9 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hotel_book/features/auth/presentation/viewmodel/auth_view_model.dart';
 
+// ThemeMode provider to manage light/dark mode
+final themeModeProvider = StateProvider<ThemeMode>((ref) => ThemeMode.light);
+
 class LoginStateful extends ConsumerStatefulWidget {
   const LoginStateful({Key? key}) : super(key: key);
-//overide
+
   @override
   _LoginStatefulState createState() => _LoginStatefulState();
 }
@@ -63,6 +66,23 @@ class _LoginStatefulState extends ConsumerState<LoginStateful> {
         MediaQuery.of(context).orientation == Orientation.landscape;
 
     return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            icon: Icon(ref.watch(themeModeProvider) == ThemeMode.light
+                ? Icons.dark_mode
+                : Icons.light_mode),
+            onPressed: () {
+              ref.read(themeModeProvider.notifier).state =
+                  ref.read(themeModeProvider) == ThemeMode.light
+                      ? ThemeMode.dark
+                      : ThemeMode.light;
+            },
+          ),
+        ],
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -268,4 +288,8 @@ class _LoginStatefulState extends ConsumerState<LoginStateful> {
       ),
     );
   }
+}
+
+void main() {
+  runApp(ProviderScope(child: LoginStateful()));
 }

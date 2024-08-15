@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hotel_book/features/dashboard/presentation/view/screen/contact_screen.dart';
+
 import 'package:hotel_book/features/dashboard/presentation/view/screen/home_screen.dart';
 import 'package:hotel_book/features/dashboard/presentation/view/screen/room_screen.dart';
 
@@ -16,11 +18,14 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
   static const List<Widget> _widgetOptions = <Widget>[
     // Text('Home Page',
     //     style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
-    HomeView(),    
+    HomeView(),
     RoomView(),
-    Text('Settings Page',
-        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+    ContactScreen(), // Replace settings with contact page
   ];
+
+  //   Text('Settings Page',
+  //       style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+  // ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -49,8 +54,8 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
             label: 'Hotels',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.contact_emergency),
+            label: 'Contact',
           ),
         ],
         currentIndex: _selectedIndex,

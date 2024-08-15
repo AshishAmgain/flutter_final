@@ -5,7 +5,7 @@ class ApiEndpoints {
   static const Duration receiveTimeout = Duration(seconds: 1000);
   // static const String baseUrl = "http://10.0.2.2:5000/api/";
   static const int roomlimit = 5;
-  static const String baseUrl = "http://192.168.101.12:5000/api/";
+  static const String baseUrl = "http://192.168.101.8:5000/api/"; //for phone
 
   // ====================== Auth Routes ======================
   static const String login = "user/login";
@@ -17,7 +17,8 @@ class ApiEndpoints {
   // static const String updateStudent = "auth/updateStudent/";
   // static const String deleteStudent = "auth/deleteStudent/";
   // static const String imageUrl = "http://10.0.2.2:3000/uploads/";
-  static const String imageUrl = "http://10.1.3.175:3000/uploads/";
+  static const String imageUrl = "http://192.168.101.8:5000/uploads/images/";
+  static const String addBooking = "bookings/booking";
 
   static const String uploadImage = "auth/uploadImage";
 }

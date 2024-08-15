@@ -13,8 +13,10 @@ class Room extends Equatable {
   final double price;
   final String description;
   final List<String> amenities;
-  final List<String> images;
+  final String images;
   final bool availability;
+  final String hotelName;
+  final String hotelPicture;
   final DateTime createdAt;
   final DateTime updatedAt;
 
@@ -26,8 +28,10 @@ class Room extends Equatable {
     required this.price,
     required this.description,
     required this.amenities,
-    required this.images,
+    required this.images, // Updated to String
     required this.availability,
+    required this.hotelName,
+    required this.hotelPicture,
     required this.createdAt,
     required this.updatedAt,
   });
@@ -44,8 +48,10 @@ class Room extends Equatable {
         price,
         description,
         amenities,
-        images,
+        images, // Updated to String
         availability,
+        hotelName,
+        hotelPicture,
         createdAt,
         updatedAt,
       ];

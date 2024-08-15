@@ -15,9 +15,10 @@ Room _$RoomFromJson(Map<String, dynamic> json) => Room(
       description: json['description'] as String,
       amenities:
           (json['amenities'] as List<dynamic>).map((e) => e as String).toList(),
-      images:
-          (json['images'] as List<dynamic>).map((e) => e as String).toList(),
+      images: json['images'] as String,
       availability: json['availability'] as bool,
+      hotelName: json['hotelName'] as String,
+      hotelPicture: json['hotelPicture'] as String,
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
     );
@@ -32,6 +33,8 @@ Map<String, dynamic> _$RoomToJson(Room instance) => <String, dynamic>{
       'amenities': instance.amenities,
       'images': instance.images,
       'availability': instance.availability,
+      'hotelName': instance.hotelName,
+      'hotelPicture': instance.hotelPicture,
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
     };

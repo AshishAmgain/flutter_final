@@ -4,6 +4,8 @@ import 'package:hotel_book/features/auth/presentation/view/register_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hotel_book/features/dashboard/presentation/view/dashboard_view.dart';
+import 'package:hotel_book/features/dashboard/presentation/view/screen/home_screen.dart';
 import 'package:hotel_book/features/splash/presentation/view/splash_view.dart';
 
 class App extends ConsumerWidget {
@@ -16,7 +18,7 @@ class App extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       title: 'Application',
       theme: AppTheme.getApplicationTheme(false),
-      home: SplashScreen(),
+      home: DashboardView(),
     );
   }
 }

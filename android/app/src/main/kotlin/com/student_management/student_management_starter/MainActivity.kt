@@ -1,4 +1,4 @@
-package com.ashish.hotel_book.hotel_book
+package com.student_management.student_management_starter
 
 import io.flutter.embedding.android.FlutterActivity
 
