@@ -5,7 +5,7 @@ import 'package:hotel_book/features/dashboard/presentation/view/screen/home_scre
 import 'package:hotel_book/features/dashboard/presentation/viewmodel/room_view_model.dart';
 import 'package:mockito/mockito.dart';
 import 'package:provider/provider.dart';
-//kugj
+
 class MockRoomViewModel extends Mock implements RoomViewModel {}
 
 void main() {
