@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:hotel_book/features/auth/presentation/state/auth_state.dart';
 import 'package:mockito/mockito.dart';
 
+//adding test
 // Mock AuthUseCase
 class MockAuthUseCase extends Mock implements AuthUseCase {}
 
